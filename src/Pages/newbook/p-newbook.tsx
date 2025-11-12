@@ -287,11 +287,14 @@ const BookList: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {localStorage.getItem("accessToken") ==  null &&
         <LoginPromptModal
           isOpen={showLoginPrompt}
           onClose={() => setShowLoginPrompt(false)}
           onLogin={handleLogin}
         />
+      }
     </Layout>
   </>
   

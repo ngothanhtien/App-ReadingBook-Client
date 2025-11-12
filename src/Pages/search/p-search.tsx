@@ -434,10 +434,10 @@ export default function SearchPage() {
         </section>
       </div>
       <LoginPromptModal
-          isOpen={showLoginPrompt}
-          onClose={() => setShowLoginPrompt(false)}
-          onLogin={handleLogin}
-        />
+        isOpen={showLoginPrompt}
+        onClose={() => setShowLoginPrompt(false)}
+        onLogin={handleLogin}
+      />
     </Layout>
   )
 }
