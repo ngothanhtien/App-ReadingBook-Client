@@ -10,6 +10,7 @@ import ForgotPasswordPage from "./Pages/forgot-password/p-forgotpassword";
 import ProfilePage from "./Pages/profile/p-profile"
 import SearchPage from "./Pages/search/p-search"
 import AuthSuccess from "./Pages/AuthSuccess";
+import PaymentPage from "./Pages/payment/PaymentPage";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/profile" element={<div><ProfilePage/></div>} />
         <Route path="/search" element = {<div> <SearchPage/></div>}/>
         <Route path="/auth/success" element={<AuthSuccess/>} />
+        <Route path="/payment" element = {<div> <PaymentPage/></div>}/>
+        <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </Router>
   );

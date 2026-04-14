@@ -96,8 +96,10 @@ export default function HomePage() {
                 </MotionFadeIn>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row ">
                   <MotionFadeIn custom={3}>
-                    <button className="inline-flex text-white items-center justify-center rounded-md text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-amber-600 text-primary-foreground hover:bg-amber-700 h-11 p-7">
-                      Bắt đầu đọc ngay
+                    <button>
+                      <a href="/payment" className="inline-flex text-white items-center justify-center rounded-md text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-amber-600 text-primary-foreground hover:bg-amber-700 h-11 p-7">
+                        Bắt đầu đọc ngay
+                      </a>
                     </button>
                   </MotionFadeIn>
                   <MotionFadeIn custom={4}>

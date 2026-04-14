@@ -2,13 +2,16 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler", // Thay đổi từ "node" sang "bundler"
+    "allowImportingTsExtensions": true, // Có thể cần nếu bạn dùng bundler
+    "rewriteRelativeImportExtensions": true, 
+    "noEmit": true, // Thường dùng với bundler vì TS chỉ để check lỗi
     "strict": true,
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
   "include": ["src"]
 }
